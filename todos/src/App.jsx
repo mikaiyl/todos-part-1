@@ -24,8 +24,7 @@ class App extends Component {
                             {
                                 //<!-- These are here just to show the structure of the list items -->
                                 //<!-- List items should get the class `editing` when editing and `completed` when marked as completed -->
-
-                                this.state.todos.map( todo => <Todolist class={ todo.completed ? "completed" : "" } label={ todo.title } id={ todo.id } userId={ todo.userId } ></Todolist> )
+                                <Todolist todos={ this.state.todos } />
                             /*
                             <li class="completed">
                                 <div class="view">
